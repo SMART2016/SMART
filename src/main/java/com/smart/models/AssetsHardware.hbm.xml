@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 25, 2016 10:55:44 AM by Hibernate Tools 5.0.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.smart.models.AssetsHardware" table="assets_hardware" catalog="TEST_ERP" optimistic-lock="version">
+        <id name="assetHardwareId" type="java.lang.Integer">
+            <column name="asset_hardware_id" />
+            <generator class="identity" />
+        </id>
+        <property name="assetType" type="string">
+            <column name="asset_type" length="50" />
+        </property>
+        <property name="vendor" type="string">
+            <column name="vendor" length="50" not-null="true" />
+        </property>
+        <property name="model" type="string">
+            <column name="model" length="30" not-null="true" />
+        </property>
+        <property name="serialnumber" type="string">
+            <column name="serialnumber" length="30" />
+        </property>
+        <property name="assetTag" type="string">
+            <column name="asset_tag" length="24" />
+        </property>
+        <property name="purchaseOrder" type="string">
+            <column name="purchase_order" length="50" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="50" />
+        </property>
+        <property name="datePurchase" type="string">
+            <column name="date_purchase" length="12" />
+        </property>
+        <property name="dateDecomission" type="string">
+            <column name="date_decomission" length="12" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="50" />
+        </property>
+        <property name="user" type="string">
+            <column name="user" length="50" />
+        </property>
+        <property name="division" type="string">
+            <column name="division" length="50" />
+        </property>
+        <property name="platform" type="string">
+            <column name="platform" length="50" />
+        </property>
+        <property name="comments" type="string">
+            <column name="comments" length="65535" />
+        </property>
+        <property name="monitorSize" type="java.lang.Integer">
+            <column name="monitor_size" />
+        </property>
+        <property name="warranty" type="string">
+            <column name="warranty" length="15" />
+        </property>
+        <property name="cube" type="string">
+            <column name="cube" length="10" />
+        </property>
+        <property name="fieldAddress" type="string">
+            <column name="field_address" length="65535" />
+        </property>
+        <property name="userAccount" type="string">
+            <column name="user_account" length="12" />
+        </property>
+    </class>
+</hibernate-mapping>

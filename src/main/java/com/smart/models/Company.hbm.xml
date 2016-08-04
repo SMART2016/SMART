@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 25, 2016 10:55:44 AM by Hibernate Tools 5.0.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.smart.models.Company" table="company" catalog="TEST_ERP" optimistic-lock="version">
+        <id name="companyId" type="java.lang.Integer">
+            <column name="company_id" />
+            <generator class="identity" />
+        </id>
+        <property name="companyName" type="string">
+            <column name="company_name" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

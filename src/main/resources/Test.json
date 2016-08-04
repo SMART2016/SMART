@@ -1,0 +1,518 @@
+{
+  "database" : {
+    "name" : "TEST_ERP",
+    "table" : [ {
+      "name" : "assets_hardware",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "asset_hardware_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "asset_type",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "vendor",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "model",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "serialnumber",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 24,
+        "autoIncrement" : false,
+        "name" : "asset_tag",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "purchase_order",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "location",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 12,
+        "autoIncrement" : false,
+        "name" : "date_purchase",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 12,
+        "autoIncrement" : false,
+        "name" : "date_decomission",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "status",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "user",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "division",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "platform",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : false,
+        "name" : "monitor_size",
+        "type" : "INTEGER",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 15,
+        "autoIncrement" : false,
+        "name" : "warranty",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : false,
+        "name" : "cube",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "field_address",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 12,
+        "autoIncrement" : false,
+        "name" : "user_account",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "assets_hardware_monitor_size",
+      "column" : [ {
+        "default" : 0,
+        "size" : 10,
+        "autoIncrement" : false,
+        "name" : "size",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      } ]
+    }, {
+      "name" : "assets_hardware_platform",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "platform_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 100,
+        "autoIncrement" : false,
+        "name" : "platform",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "assets_hardware_status",
+      "column" : [ {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "assets_hardware_status",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      } ]
+    }, {
+      "name" : "assets_hardware_type",
+      "column" : [ {
+        "size" : 15,
+        "autoIncrement" : false,
+        "name" : "assets_hardware_type",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "assets_software",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "asset_software_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 100,
+        "autoIncrement" : false,
+        "name" : "asset",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "vendor",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 20,
+        "autoIncrement" : false,
+        "name" : "version",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 12,
+        "autoIncrement" : false,
+        "name" : "date_purchase",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "license_type",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "status",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "user",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "division",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 15,
+        "autoIncrement" : false,
+        "name" : "platform",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "location",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 12,
+        "autoIncrement" : false,
+        "name" : "seats",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "assets_software_license",
+      "column" : [ {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "assets_software_license",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      } ]
+    }, {
+      "name" : "assets_software_platform",
+      "column" : [ {
+        "size" : 15,
+        "autoIncrement" : false,
+        "name" : "assets_software_type",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      } ]
+    }, {
+      "name" : "company",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "company_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 200,
+        "autoIncrement" : false,
+        "name" : "company_name",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "division",
+      "column" : [ {
+        "size" : 15,
+        "autoIncrement" : false,
+        "name" : "division",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "location",
+      "column" : [ {
+        "size" : 50,
+        "autoIncrement" : false,
+        "name" : "location",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "members",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "username",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "password",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 100,
+        "autoIncrement" : false,
+        "name" : "firstname",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 100,
+        "autoIncrement" : false,
+        "name" : "lastname",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 24,
+        "autoIncrement" : false,
+        "name" : "role",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "vendors",
+      "column" : [ {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "vendor_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 100,
+        "autoIncrement" : false,
+        "name" : "vendor",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 65535,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "LONGVARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    }, {
+      "name" : "vendors_software",
+      "column" : [ {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "vendor",
+        "type" : "VARCHAR",
+        "required" : true,
+        "primaryKey" : false
+      }, {
+        "size" : 10,
+        "autoIncrement" : true,
+        "name" : "vendor_id",
+        "type" : "INTEGER",
+        "required" : true,
+        "primaryKey" : true
+      }, {
+        "size" : 30,
+        "autoIncrement" : false,
+        "name" : "comments",
+        "type" : "VARCHAR",
+        "required" : false,
+        "primaryKey" : false
+      } ]
+    } ]
+  }
+}

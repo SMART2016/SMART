@@ -1,0 +1,32 @@
+<project name="antbuild" basedir="." default="gen_hibernate" xmlns:artifact="antlib:org.apache.maven.artifact.ant"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="antlib:org.apache.maven.artifact.ant ">
+
+   <!-- <artifact:dependencies filesetId="deps.fileset" type="jar">
+        <pom file="pom.xml"/>
+    </artifact:dependencies>-->
+    <!--<copy todir="lib">
+        <fileset refid="deps.fileset" />
+        &lt;!&ndash; This mapper strips off all leading directory information &ndash;&gt;
+        <mapper type="flatten" />
+    </copy>-->
+    <path id="libs.folder">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    <taskdef uri="antlib:org.apache.maven.artifact.ant" resource="org/apache/maven/artifact/ant/antlib.xml"
+             classpathref="libs.folder"/>
+
+
+    <taskdef name="hibernatetool"
+             classname="org.hibernate.tool.ant.HibernateToolTask" classpathref="libs.folder"/>
+    <target name="gen_hibernate">
+        <hibernatetool>
+            <jdbcconfiguration configurationfile="hibernate.cfg.xml" packagename="com.smart.models"
+                               detectmanytomany="true"></jdbcconfiguration>
+            <hbm2hbmxml destdir="src/main/java"></hbm2hbmxml>
+            <hbm2java destdir="src/main/java"></hbm2java>
+        </hibernatetool>
+    </target>
+</project>
