@@ -2,14 +2,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="antlib:org.apache.maven.artifact.ant ">
 
-   <!-- <artifact:dependencies filesetId="deps.fileset" type="jar">
+    <artifact:dependencies filesetId="deps.fileset" type="jar">
         <pom file="pom.xml"/>
-    </artifact:dependencies>-->
-    <!--<copy todir="lib">
+    </artifact:dependencies>
+    <copy todir="lib">
         <fileset refid="deps.fileset" />
-        &lt;!&ndash; This mapper strips off all leading directory information &ndash;&gt;
+        <!-- This mapper strips off all leading directory information -->
         <mapper type="flatten" />
-    </copy>-->
+    </copy>
     <path id="libs.folder">
         <fileset dir="lib">
             <include name="*.jar"/>
