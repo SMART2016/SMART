@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jsonschema2pojo:jsonschema2pojo-ant:0.4.21">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsonschema2pojo/jsonschema2pojo-ant/0.4.21/jsonschema2pojo-ant-0.4.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsonschema2pojo/jsonschema2pojo-ant/0.4.21/jsonschema2pojo-ant-0.4.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsonschema2pojo/jsonschema2pojo-ant/0.4.21/jsonschema2pojo-ant-0.4.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
